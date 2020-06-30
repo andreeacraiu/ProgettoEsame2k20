@@ -11,7 +11,9 @@ public class Tweet {
 	 * @param id
 	 * @param text
 	 * @param language_post
+	 * @param name
 	 * @param screen_name
+	 * @param numpost_user
 	 * @param id_user
 	 * @param location_user
 	 */
@@ -36,30 +38,32 @@ public class Tweet {
 	
 	@JsonPropertyDescription("Id utente")
 	private String id_user;
-	
 	/**
 	 * Constructor
 	 * @param created_at
 	 * @param id
 	 * @param text
-	 * @param hashtag
 	 * @param screen_name
+	 * @param name
 	 * @param location_user
 	 * @param id_user
 	 * @param language_post
+	 * @param numpost_user
 	 */
 	
-	
-	public Tweet(String created_at, long id, String text, String screen_name, String location_user,
-			String id_user,String language_post) {
+	public Tweet(String created_at, long id, String text,String name, String screen_name, String location_user,
+			String id_user,String language_post,long numpost_user) {
 		super();
 		this.created_at = created_at;
 		this.id = id;
 		this.text = text;
+		this.name=name;
 		this.screen_name = screen_name;
 		this.location_user = location_user;
 		this.id_user = id_user;
 		this.language_post= language_post;
+		this.numpost_user=numpost_user;
+		
 	}
 	
 
@@ -72,11 +76,22 @@ public class Tweet {
 	
 	
 
+		/**
+	 * Constructor without parameters
+	 */
+	public Tweet() {
+	}
+	
+	
+
 	/**
 	 * Getters
 	 */
 	public String getCreated_at() {
 		return created_at;
+	}
+	public String getname() {
+		return name;
 	}
 	
     public String getScreen_name() {
@@ -104,6 +119,11 @@ public class Tweet {
 		return location_user;
 	}
 	
+	public long getnumpost_user() {
+		return numpost_user;
+	}
+	
+	
 	/**
 	 * Setters
 	 */
@@ -117,6 +137,9 @@ public class Tweet {
 	
 	public void setText(String text) {
 		this.text = text;
+	}
+	public void setname(String name) {
+		this.name = name;
 	}
 
  
@@ -140,6 +163,13 @@ public class Tweet {
 		this.id_user = id_user;
 	}
 	
+	public void setnumpost_user(long numpost_user) {
+		this.numpost_user = numpost_user;
+	}
+	
+	
+	
 	
 }
 	
+

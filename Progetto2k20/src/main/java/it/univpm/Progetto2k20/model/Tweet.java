@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
 
 public class Tweet {
-	
 	/**
 	 * Parameters
 	 * @param created_at
@@ -13,9 +12,9 @@ public class Tweet {
 	 * @param language_post
 	 * @param name
 	 * @param screen_name
-	 * @param numpost_user
 	 * @param id_user
 	 * @param location_user
+	 * @param numpost_user
 	 */
 	 
 	@JsonPropertyDescription("Data di pubblicazione del tweet")
@@ -31,6 +30,8 @@ public class Tweet {
 	private String language_post;
 	
 	@JsonPropertyDescription("Nome utente")
+	private String name;
+	@JsonPropertyDescription("Nome utente")
 	private String screen_name;
 	
 	@JsonPropertyDescription("Luogo dell'utente")
@@ -38,6 +39,11 @@ public class Tweet {
 	
 	@JsonPropertyDescription("Id utente")
 	private String id_user;
+	
+	@JsonPropertyDescription("Numero di post pubblicati dallo user")
+	private long numpost_user;
+	 
+	
 	/**
 	 * Constructor
 	 * @param created_at

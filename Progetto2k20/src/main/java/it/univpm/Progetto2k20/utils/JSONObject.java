@@ -5,6 +5,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
+/**
+ * Classe che mi permette di scaricare il json dal url dell'API
+ * 
+ */
 public class JSONObject {
 	
 	public static String downloadTweets() {
@@ -50,4 +54,6 @@ public class JSONObject {
 
 
 }
+}
+
 }

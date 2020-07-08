@@ -40,7 +40,7 @@ public class Controller {
 	@RequestMapping(value = "/data", method = RequestMethod.GET)
 	public ResponseEntity<Object> getTweets() {
 		
-		return new ResponseEntity<>(tweet.getTweet(), HttpStatus.OK);
+		return new ResponseEntity<>(tweet.getTweets(), HttpStatus.OK);
 	}
 
 	/**
@@ -61,8 +61,8 @@ public class Controller {
 	 */
 	
 	@RequestMapping(value = "/stat", method = RequestMethod.GET)
-	public ResponseEntity<Object> getStats() {
-		return new ResponseEntity<>(tweet.getStats(), HttpStatus.OK);
+	public ResponseEntity<Object> getStat() {
+		return new ResponseEntity<>(tweet.getStat(), HttpStatus.OK);
 	}
 	
 	/**
@@ -93,16 +93,16 @@ public class Controller {
 
 
 
-/**
- * Rotta che permette di calcolare la frequenza dei tweet esteri per lingua
- * 
- * @param field = lingua del post inserita dall'utente
- * @return Restituisce la frequenza dei tweet esteri
- * @throws JSONException
- */
+    /**
+     * Rotta che permette di calcolare la frequenza dei tweet esteri per lingua
+     * 
+     * @param field = lingua del post inserita dall'utente
+     * @return Restituisce la frequenza dei tweet esteri
+     * @throws JSONException
+     */
 	
-@RequestMapping(value = "/freq", method = RequestMethod.GET)
-public ResponseEntity<ArrayList<Frequenze>> freq (@RequestParam(required = true) String field
+    @RequestMapping(value = "/freq", method = RequestMethod.GET)
+    public ResponseEntity<ArrayList<Frequenze>> freq (@RequestParam(required = true) String field
 		 ) throws JSONException{
 	ArrayList<Frequenze> fre = new ArrayList<Frequenze>();
 	if (!field.isEmpty()) {
@@ -111,7 +111,7 @@ public ResponseEntity<ArrayList<Frequenze>> freq (@RequestParam(required = true)
 	fre = Statistiche.frequenza_settimana(JSONParse.parsaJson(JSONObject.downloadTweets()));
 
 	return new ResponseEntity<>(fre, HttpStatus.OK);
-}
+    }
 	if (field.isEmpty()) {
 		
 		
@@ -121,4 +121,7 @@ public ResponseEntity<ArrayList<Frequenze>> freq (@RequestParam(required = true)
 }
 
 }
+	
+
+
 	

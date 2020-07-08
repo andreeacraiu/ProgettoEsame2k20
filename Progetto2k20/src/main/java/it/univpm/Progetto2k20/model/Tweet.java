@@ -3,7 +3,13 @@ package it.univpm.Progetto2k20.model;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
 
+/**
+ * Classe che modella i tweet 
+ * 
+ * 
+ */
 public class Tweet {
+
 	/**
 	 * Parameters
 	 * @param created_at
@@ -31,7 +37,8 @@ public class Tweet {
 	
 	@JsonPropertyDescription("Nome utente")
 	private String name;
-	@JsonPropertyDescription("Nome utente")
+	
+	@JsonPropertyDescription("Nome utente a schermo")
 	private String screen_name;
 	
 	@JsonPropertyDescription("Luogo dell'utente")
@@ -41,24 +48,27 @@ public class Tweet {
 	private String id_user;
 	
 	@JsonPropertyDescription("Numero di post pubblicati dallo user")
-	private long numpost_user;
-	 
+	private Long numpost_user;
+	
+
+	
 	
 	/**
 	 * Constructor
 	 * @param created_at
 	 * @param id
 	 * @param text
-	 * @param screen_name
-	 * @param name
-	 * @param location_user
-	 * @param id_user
 	 * @param language_post
+	 * @param name
+	 * @param screen_name
+	 * @param id_user
+	 * @param location_user
 	 * @param numpost_user
 	 */
 	
+	
 	public Tweet(String created_at, long id, String text,String name, String screen_name, String location_user,
-			String id_user,String language_post,long numpost_user) {
+			String id_user,String language_post,Long numpost_user) {
 		super();
 		this.created_at = created_at;
 		this.id = id;
@@ -70,19 +80,12 @@ public class Tweet {
 		this.language_post= language_post;
 		this.numpost_user=numpost_user;
 		
+		
 	}
 	
 
 
 	/**
-	 * Constructor without parameters
-	 */
-	public Tweet() {
-	}
-	
-	
-
-		/**
 	 * Constructor without parameters
 	 */
 	public Tweet() {
@@ -125,9 +128,12 @@ public class Tweet {
 		return location_user;
 	}
 	
-	public long getnumpost_user() {
+	public Long getnumpost_user() {
 		return numpost_user;
 	}
+	
+	
+	
 	
 	
 	/**
@@ -174,8 +180,7 @@ public class Tweet {
 	}
 	
 	
-	
-	
 }
+	
 	
 

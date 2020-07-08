@@ -1,7 +1,10 @@
 package it.univpm.Progetto2k20.model;
 
-/** E' la classe base che ci permette di definire come è
- * composto un metadato, ovvero nome assegnato, sua descrizione e tipo di dato
+/** 
+ * Classe che modella un metadato 
+ * @param name = nome assegnato
+ * @param sorceField = descrizione 
+ * @param type = tipo di dato
  * 
  */
 
@@ -10,11 +13,23 @@ public class Metadata {
 	private String sourceField; 
 	private String type; 
 	
+	
+	/** 
+	 * Costruttore
+	 * 
+	 */
+
 	public Metadata(String name, String sourceField, String type) {
 		this.name = name;
 		this.sourceField = sourceField;
 		this.type = type;
 	}
+	
+	/** 
+	 * Getters e setters
+	 * 
+         */
+
 	public String getName() {
 		return name;
 	}

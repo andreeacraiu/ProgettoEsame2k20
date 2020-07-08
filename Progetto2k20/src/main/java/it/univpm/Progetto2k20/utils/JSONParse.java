@@ -7,13 +7,19 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import it.univpm.Progetto2k20.model.*;
 
-
+/**
+ * Classe che esegue il parsing dei tweet
+ * 
+ * @see Parser
+ * 
+ */
 public class JSONParse extends Parser
 {
 	public static ArrayList <Tweet> parsaJson(String data)
 	{
 		
 			ArrayList <Tweet> result= new ArrayList <Tweet>();
+			
 			//JSONParser 
 				JSONObject jobj = new JSONObject();
 				try {
@@ -24,6 +30,7 @@ public class JSONParse extends Parser
 	
 			//JSON Array statuses
 		JSONArray jsonarray= (JSONArray) jobj.get("statuses");
+		
 			//Get data 
 			for(Object o : jsonarray)
 			{  
@@ -48,8 +55,19 @@ public class JSONParse extends Parser
 				t1.setnumpost_user(numpost);
 				String location = (String) ((JSONObject) j1).get("location");
 				t1.setLocation_user(location);
+				
+				
+				if (j1.get("location").equals("")) {
+					t1.setLocation_user("Location Ignota");
+					}
+				else {t1.setLocation_user((String) j1.get("location"));
+					}
+				
+				
 				String id = (String) ((JSONObject) j1).get("id_str");
 				t1.setId_user(id);
+				
+				
 				
 
 				}
@@ -59,6 +77,8 @@ public class JSONParse extends Parser
 				 String language = (String) ((JSONObject) j2).get("iso_language_code");
 					t1.setlanguage_post(language);
 			}
+			
+
 			
 			
 	       
@@ -70,7 +90,8 @@ public class JSONParse extends Parser
 		
 		
 	}return result;
-
-}
+	}
+	
 	
 }
+	

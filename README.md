@@ -137,3 +137,15 @@ Esempio richiesta `http://localhost:8080/freq?field="en"`:
 Esempio richiesta `http://localhost:8080/stat`:
 ![Recordit GIF](http://g.recordit.co/axZCKFv8JB.gif)
 
+### GUI
+
+L'acronimo GUI sta per Graphical User Interface ed è l'insieme di tutti i componenti grafici (es. icone, pulsanti, finestre pop-up,...) attraverso cui noi possiamo interagire con il computer. Per garantire il funzionamento dell'applicazione anche per utenti poco esperti è stata implementata un'interfaccia grafica molto semplice, ma efficace: 
+
+<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI.png">
+
+Sono stati importati questi due package:
+
+- java.awt -> fornisce il modello degli eventi, componenti grafiche e la struttura di base
+
+- java.swing -> libreria di componenti grafici basati su AWT (Abstract Windowing Toolkit)
+

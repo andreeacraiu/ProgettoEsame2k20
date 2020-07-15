@@ -22,3 +22,15 @@ Il progetto è stato sviluppato utilizzando l'IDE [Eclipse](https://www.eclipse.
 - Copiare nella finestra che si è appena aperta l'[URL del progetto](https://github.com/andreeacraiu/ProgettoEsame2k20);
 
 - Una volta importato, basterà selezionare il progetto nel `Package Explorer`, tasto destro, opzione `Run As -> Spring Boot App`;
+
+### Spring Boot App
+Spring Boot è una soluzione "convention over configuration" (configurazione minima o addirittura assente) per il framework Spring di Java, che è stato rilasciato nel 2012 e riduce la complessità di configurazione di nuovi progetti Spring. A questo scopo, Spring Boot definisce una configurazione di base che include le linee guida per l'uso del framework e tutte le librerie di terze parti rilevanti, rendendo quindi l'avvio di nuovi progetti il più semplice possibile. 
+Spring Boot offre i seguenti vantaggi:
+
+- Possibilità di incorporare direttamente applicazioni web server;
+
+- Configurazione Maven semplificata;
+
+- Configurazione automatica di Spring, ove possibile;
+
+I file di archivio per Spring Boot possono essere creati accedendo al servizio web [Spring Initializr](https://start.spring.io), creare la configurazione di Spring Boot e scaricarla poi come modello di progetto finito.

@@ -122,7 +122,7 @@ Per eseguire le richieste GET si può installare un API testing (per esempio Pos
 ### Statistiche
 
 L'applicazione permette di:
-- Effettuare delle statistiche su due dei campi più importanti di tipo String:
+- Effettuare delle statistiche su due dei campi più importanti di tipo String (language_post e location_user):
 
 Esempio richiesta `http://localhost:8080/stats?field="language_post"`:
 ![Recordit GIF](http://g.recordit.co/pb6cuhnZmP.gif)
@@ -143,9 +143,27 @@ L'acronimo GUI sta per Graphical User Interface ed è l'insieme di tutti i compo
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI.png">
 
-Sono stati importati questi due package:
+Sono stati importati due librerie:
 
 - java.awt -> fornisce il modello degli eventi, componenti grafiche e la struttura di base
 
 - java.swing -> libreria di componenti grafici basati su AWT (Abstract Windowing Toolkit)
 
+Quando l'utente interagisce con l'interfaccia grafica cliccando su uno dei cinque bottoni, si scaturisce un evento. Il ricevitore, listener, è l’oggetto che deve rispondere all’evento implementando l’interfaccia ActionListener:
+
+```json
+
+	private class nomeclasse implements ActionListener {
+        @Override
+         public void actionPerfomed(ActionEvent e) {
+            //corpo del metodo
+         }
+        } 
+```
+
+Un bottone può essere creato usando la classe JButtton del package Swing:
+
+```json
+
+	JButton button=new JButton("nome bottone");
+```

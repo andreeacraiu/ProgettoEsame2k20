@@ -49,10 +49,7 @@ public class Frequenze {
 	public void setGiorno(String giorno) {
 		this.giorno = giorno;
 	}
-	public void incrementaNpost() {
-		numpost++;
-		return;		
-	}
+	
 
 
 }

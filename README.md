@@ -18,7 +18,7 @@ L'applicazione elaborata per l'esame di Luglio 2020 è un Web Service, un sistem
 L'applicazione è stata sviluppata utilizzando l'IDE [Eclipse](https://www.eclipse.org/downloads/) con il quale è possibile aprire il progetto seguendo queste indicazioni:
 
 
-- Tasto destro nel `Package Explorer -> Import -> Project from GIT (with Smart Import)`;
+- Tasto destro nel `Package Explorer -> Import -> Project from GIT (with Smart Import) -> Clone URI`;
 
 - Copiare nella finestra che si è appena aperta l'[URL del progetto](https://github.com/andreeacraiu/ProgettoEsame2k20);
 
@@ -149,7 +149,7 @@ E' possibile avviare la GUI scegliendo GUI_Runner nella finestra di avvio dell'a
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_RUNNER.png">
 
-* **Sono state importate due librerie**:
+**Sono state importate due librerie:
 
 - java.awt -> fornisce il modello degli eventi, componenti grafiche e la struttura di base
 

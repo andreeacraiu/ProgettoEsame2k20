@@ -12,7 +12,7 @@
 - [Software utilizzati](https://github.com/andreeacraiu/ProgettoEsame2k20#software-utilizzati)
 
 ### Presentazione ed avvio del progetto
-L'applicazione elaborata per l'esame di Luglio 2020 è un Web Service, un sistema software che risponde alle chiamate di un Client per ottenere informazioni su un data-set di tweet. Tale data-set è stato estrapolato da un [URL](https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/api/1.1/search/tweets.json?q=destinazionemarche&count=100) che a partire dai post contenenti l'hashtag #destinazionemarche è possibile analizzare gli utenti creatori dei tweet al fine di dedurre quelli provenienti dall'estero. Inoltre, possono essere effettuate statistiche sui campi d'interesse e monitorare l'andamento settimanale della frequenza dei tweet esteri .
+L'applicazione elaborata per l'esame di Luglio 2020 è un Web Service, un sistema software che risponde alle chiamate di un Client per ottenere informazioni su un data-set di tweet. Tale data-set è stato estrapolato da un [URL](https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/api/1.1/search/tweets.json?q=destinazionemarche&count=100) che a partire dai post contenenti l'hashtag #destinazionemarche è possibile analizzare gli utenti creatori dei tweet al fine di dedurre quelli provenienti dall'estero. Inoltre, possono essere effettuate statistiche sui campi d'interesse e monitorare l'andamento settimanale della frequenza dei tweet esteri filtrandoli per lingua.
 
 Il progetto è stato sviluppato utilizzando l'IDE [Eclipse](https://www.eclipse.org/downloads/) con l'utilizzo del quale è possibile aprire il progetto seguendo queste indicazioni:
 
@@ -141,13 +141,17 @@ Esempio richiesta `http://localhost:8080/stat`:
 
 L'acronimo GUI sta per Graphical User Interface ed è l'insieme di tutti i componenti grafici (es. icone, pulsanti, finestre pop-up,...) attraverso cui noi possiamo interagire con il computer. Per garantire il funzionamento dell'applicazione anche per utenti poco esperti è stata implementata un'interfaccia grafica molto semplice, ma efficace: 
 
-<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI.png">
+<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_.png">
+
+E'possibile avviare la GUI scegliendo GUI_Runner nella finestra di avvio dell'applicazione:
+
+<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_RUNNER.png">
 
 Sono stati importati due librerie:
 
 - java.awt -> fornisce il modello degli eventi, componenti grafiche e la struttura di base
 
-- java.swing -> libreria di componenti grafici basati su AWT (Abstract Windowing Toolkit)
+- javax.swing -> libreria di componenti grafici basati su AWT (Abstract Windowing Toolkit)
 
 Quando l'utente interagisce con l'interfaccia grafica cliccando su uno dei cinque bottoni, si scaturisce un evento. Il ricevitore, listener, è l’oggetto che deve rispondere all’evento implementando l’interfaccia ActionListener:
 

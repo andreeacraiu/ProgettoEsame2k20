@@ -139,11 +139,11 @@ Esempio richiesta `http://localhost:8080/stat`:
 
 ### GUI
 
-L'acronimo GUI sta per Graphical User Interface ed è l'insieme di tutti i componenti grafici (es. icone, pulsanti, finestre pop-up,...) attraverso cui noi possiamo interagire con il computer. Per garantire il funzionamento dell'applicazione anche per utenti poco esperti è stata implementata un'interfaccia grafica molto semplice, ma efficace: 
+L'acronimo GUI sta per Graphical User Interface ed è l'insieme di tutti i componenti grafici (es. icone, pulsanti, finestre pop-up,...) attraverso cui l'utente può  interagire con il computer. Per garantire il funzionamento dell'applicazione anche per utenti poco esperti è stata implementata un'interfaccia grafica molto semplice, ma efficace: 
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_.png">
 
-E'possibile avviare la GUI scegliendo GUI_Runner nella finestra di avvio dell'applicazione:
+E' possibile avviare la GUI scegliendo GUI_Runner nella finestra di avvio dell'applicazione:
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_RUNNER.png">
 
@@ -210,3 +210,11 @@ Ogni package è costituito a sua volta dalle seguenti classi:
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_UTILS.png">
 
 Per visionare i diagrammi di sequenza, si faccia riferimento alla cartella denominata [umlDIAGRAM](https://github.com/andreeacraiu/ProgettoEsame2k20/tree/master/umlDIAGRAM) presente nella repository.
+
+
+### Software utilizzati
+
+* [Eclipse](https://www.eclipse.org/) - ambiente di sviluppo integrato
+* [Spring Boot](https://spring.io/projects/spring-boot) - framework per  sviluppo applicazioni Java
+* [Maven](https://maven.apache.org/) - strumento di gestione di progetti
+

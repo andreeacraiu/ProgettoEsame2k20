@@ -10,21 +10,22 @@
 - [GUI](https://github.com/andreeacraiu/ProgettoEsame2k20#gui)
 - [Diagrammi UML](https://github.com/andreeacraiu/ProgettoEsame2k20#diagrammi-UML)
 - [Software utilizzati](https://github.com/andreeacraiu/ProgettoEsame2k20#software-utilizzati)
+- [Autore](https://github.com/andreeacraiu/ProgettoEsame2k20#autore)
 
 ### Presentazione ed avvio del progetto
-L'applicazione elaborata per l'esame di Luglio 2020 è un Web Service, un sistema software che risponde alle chiamate di un Client per ottenere informazioni su un data-set di tweet. Tale data-set è stato estrapolato da un [URL](https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/api/1.1/search/tweets.json?q=destinazionemarche&count=100) che a partire dai post contenenti l'hashtag #destinazionemarche è possibile analizzare gli utenti creatori dei tweet al fine di dedurre quelli provenienti dall'estero. Inoltre, possono essere effettuate statistiche sui campi d'interesse e monitorare l'andamento settimanale della frequenza dei tweet esteri filtrandoli per lingua.
+L'applicazione elaborata per l'esame di Luglio 2020 è un Web Service, un sistema software che risponde alle chiamate di un Client per ottenere informazioni su un data-set di tweet. Tale data-set è stato estrapolato da un [URL](https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/api/1.1/search/tweets.json?q=destinazionemarche&count=100) il quale, partire dai post contenenti l'hashtag #destinazionemarche permette di analizzare gli utenti creatori dei tweet al fine di dedurre quelli provenienti dall'estero. Inoltre, possono essere effettuate statistiche sui campi d'interesse e monitorare l'andamento settimanale della frequenza dei tweet esteri filtrandoli per lingua.
 
-Il progetto è stato sviluppato utilizzando l'IDE [Eclipse](https://www.eclipse.org/downloads/) con l'utilizzo del quale è possibile aprire il progetto seguendo queste indicazioni:
+L'applicazione è stata sviluppata utilizzando l'IDE [Eclipse](https://www.eclipse.org/downloads/) con il quale è possibile aprire il progetto seguendo queste indicazioni:
 
 
 - Tasto destro nel `Package Explorer -> Import -> Project from GIT (with Smart Import)`;
 
 - Copiare nella finestra che si è appena aperta l'[URL del progetto](https://github.com/andreeacraiu/ProgettoEsame2k20);
 
-- Una volta importato, basterà selezionare il progetto nel `Package Explorer`, tasto destro, opzione `Run As -> Spring Boot App (oppure GUI_Runner)`;
+- Una volta importato basterà selezionare il progetto nel `Package Explorer`, tasto destro, opzione `Run As -> Spring Boot App (oppure GUI_Runner)`;
 
 ### Spring Boot App
-Spring Boot è una soluzione "convention over configuration" (configurazione minima o addirittura assente) per il framework Spring di Java, che è stato rilasciato nel 2012 e riduce la complessità di configurazione di nuovi progetti Spring. A questo scopo, Spring Boot definisce una configurazione di base che include le linee guida per l'uso del framework e tutte le librerie di terze parti rilevanti, rendendo quindi l'avvio di nuovi progetti il più semplice possibile. 
+Spring Boot è una soluzione "convention over configuration" (configurazione minima o addirittura assente) per il framework Spring di Java, che è stato rilasciato nel 2012 e riduce la complessità di configurazione di nuovi progetti Spring. A questo scopo, Spring Boot, definisce una configurazione di base che include le linee guida per l'uso del framework e tutte le librerie di terze parti rilevanti rendendo quindi l'avvio di nuovi progetti il più semplice possibile. 
 Spring Boot offre i seguenti vantaggi:
 
 - Possibilità di incorporare direttamente applicazioni web server;
@@ -36,7 +37,7 @@ Spring Boot offre i seguenti vantaggi:
 I file di archivio per Spring Boot possono essere creati accedendo al servizio web [Spring Initializr](https://start.spring.io), creare la configurazione di Spring Boot e scaricarla poi come modello di progetto finito.
 
 ### Eseguire richieste
-Nel momento in cui viene avviata l'applicazione, i dati forniti sono in formato JSON: 
+Nel momento in cui viene avviata l'applicazione i dati forniti sono in formato JSON: 
 
 ```json
 [
@@ -153,7 +154,7 @@ Sono state importate due librerie:
 
 - javax.swing -> libreria di componenti grafici basati su AWT (Abstract Windowing Toolkit)
 
-Quando l'utente interagisce con l'interfaccia grafica cliccando su uno dei cinque bottoni, si scaturisce un evento. Il ricevitore, listener, è l’oggetto che deve rispondere all’evento implementando l’interfaccia ActionListener:
+Quando l'utente interagisce con l'interfaccia grafica cliccando su uno dei cinque bottoni si scaturisce un evento. Il ricevitore, listener, è l’oggetto che deve rispondere all’evento implementando l’interfaccia ActionListener:
 
 ```json
 
@@ -175,7 +176,7 @@ Un bottone può essere creato usando la classe JButtton del package Swing:
 ### Diagrammi UML
 
 UML (Unified Modeling Language) è un linguaggio basato su diagrammi utilizzati per progettare un sistema software sia dal punto di vista strutturale che comportamentale. 
-Il progetto è organizzato in package, rispettando il pattern architetturale MVC:
+Il progetto è organizzato in package rispettando il pattern architetturale MVC (model-view-controller):
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_DIAGRAM.png">
 
@@ -218,3 +219,6 @@ Per visionare i diagrammi di sequenza, si faccia riferimento alla cartella denom
 * [Spring Boot](https://spring.io/projects/spring-boot) - framework per  sviluppo applicazioni Java
 * [Maven](https://maven.apache.org/) - strumento di gestione di progetti
 
+### Autore
+
+- [Craiu Andreea](https://github.com/andreeacraiu)

@@ -113,12 +113,12 @@ Il seguente Diagramma dei casi d'uso mostra le richieste che il client può effe
 
 Per eseguire le richieste GET si può installare un API testing (per esempio Postman), oppure tramite richiesta all'URL http://localhost:8080/.
 
-|    TIPO        |rotta                          |descrizione                                              |
+|    TIPO        |           ROTTA               |                    DESCRIZIONE                          |
 |----------------|-------------------------------|---------------------------------------------------------|
 |GET             |/data                          |restituisce i tweet con i relativi dati                  |
-|GET             |/metadata                      |restituisce gli alias utilizzati per la descrizione del tweet         |
-|GET             |/stat                          |restituisce numero totale di utenti esteri (per lingua)                        |
-|GET             |/stats?field="campo scelto"    |restituisce i luoghi oppure le lingue dei post con conteggio                |
+|GET             |/metadata                      |restituisce gli alias utilizzati per la descrizione del tweet|
+|GET             |/stat                          |restituisce numero totale di utenti esteri (per lingua)|
+|GET             |/stats?field="campo scelto"    |restituisce i luoghi oppure le lingue dei post con conteggio|
 |GET             |/freq?field="lingua scelta"    |restituisce la frequenza settimanale dei tweet esteri|
 
 ### Statistiche
@@ -150,7 +150,7 @@ I codici di stato sono composti da tre numeri di cui il primo indica il tenore d
 - Se inizia con 4 il client ha eseguito una richiesta non corretta;
 - Se inizia con 5 si è verificato un errore al server;
 
-|        Codice Riposta         |    Significato                          |
+|        Codice Risposta         |    Significato                          |
 | :---------------------------: | :---------------------------------------|
 |          `200 - OK`           | Operazione eseguita con successo. |
 |      `400 - BAD REQUEST`      | Richiesta non formulata correttamente. |

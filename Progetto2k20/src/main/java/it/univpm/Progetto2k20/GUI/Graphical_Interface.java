@@ -43,12 +43,15 @@ public class Graphical_Interface {
 		
 		
 		//colore di sfondo 
+		//GridBagLayout divide la finestra in righe e colonne e tu decidi in quale riga e colonna inserire i componenti
 		Container c = GUI.getContentPane();
 		c.setBackground(new Color(180, 230, 240));
 		c.setLayout(new GridBagLayout());
 		GridBagConstraints g = new GridBagConstraints();
 
-		//aggiunge il logo 
+		//aggiunge il logo
+		//gridx e gridy coordinate della posizione del bottone
+		//i valori di x (colonna) aumentano da sinistra a destra, i valori di y (riga) aumentano dall'alto verso il basso
 		ImageIcon logo = new ImageIcon(Graphical_Interface.class.getResource("logo4.png"));
 		JLabel foto = new JLabel(logo);
 		g.gridx = 0;
@@ -117,8 +120,8 @@ public class Graphical_Interface {
 		//chiude la finestra altrimenti il suo processo rimane in background 
 		GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		UIManager.put("OptionPane.background", new ColorUIResource(171, 218, 236));
-		UIManager.put("Panel.background", new ColorUIResource(171, 218, 236));
+		UIManager.put("OptionPane.background", new ColorUIResource(180, 230, 240));
+		UIManager.put("Panel.background", new ColorUIResource(180, 230, 240));
 		UIManager.put("OptionPane.inputDialogTitle", "Inserisci...");
 		ImageIcon ic = new ImageIcon(Graphical_Interface.class.getResource("logo4.png"));
 		UIManager.put("OptionPane.questionIcon", new IconUIResource(ic));

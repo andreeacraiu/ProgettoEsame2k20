@@ -195,7 +195,7 @@ Ogni package è costituito a sua volta dalle seguenti classi:
 
 * **Package it.univpm.Progetto2k20.model**
 
-<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_MODEL.png">
+<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_MODEL_.png">
 
 * **Package it.univpm.Progetto2k20.service**
 

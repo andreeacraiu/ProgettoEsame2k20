@@ -143,7 +143,7 @@ Esempio richiesta `http://localhost:8080/stat`:
 
 ### Protocollo HTTP
 
-Il protocollo HTTP funziona mediante un modello richiesta/risposta. Il client invia una richiesta al server, il quale la interpreta e restiuisce una risposta correlata da un codice.
+Il protocollo HTTP funziona mediante un modello richiesta/risposta. Il client invia una richiesta al server, il quale la interpreta e restituisce una risposta correlata da un codice.
 I codici di stato sono composti da tre numeri di cui il primo indica il tenore della risposta:
 
 - Se il numero inizia con 2 la richiesta è corretta ed è stata processata con successo;

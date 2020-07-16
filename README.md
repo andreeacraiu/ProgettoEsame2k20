@@ -181,31 +181,31 @@ Il progetto è organizzato in package, rispettando il pattern architetturale MVC
 
 Ogni package è costituito a sua volta dalle seguenti classi:
 
-- Package it.univpm.Progetto2k20 
+* **Package it.univpm.Progetto2k20**
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_APPLICATION.png">
 
-- Package it.univpm.Progetto2k20.controller
+* **Package it.univpm.Progetto2k20.controller**
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_CONTROLLER.png">
 
-- Package it.univpm.Progetto2k20.GUI 
+* **Package it.univpm.Progetto2k20.GUI**
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_GUI.png">
 
-- Package it.univpm.Progetto2k20.model
+* **Package it.univpm.Progetto2k20.model**
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_MODEL.png">
 
-- Package it.univpm.Progetto2k20.service
+* **Package it.univpm.Progetto2k20.service**
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_SERVICE.png">
 
-- Package it.univpm.Progetto2k20.stats
+* **Package it.univpm.Progetto2k20.stats**
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_STATS.png">
 
-- Package it.univpm.Progetto2k20.utils 
+* **Package it.univpm.Progetto2k20.utils** 
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/umlDIAGRAM/PACKAGE_UTILS.png">
 

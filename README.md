@@ -149,7 +149,7 @@ E' possibile avviare la GUI scegliendo GUI_Runner nella finestra di avvio dell'a
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_RUNNER.png">
 
-**Sono state importate due librerie:
+**Sono state importate due librerie**:
 
 - java.awt -> fornisce il modello degli eventi, componenti grafiche e la struttura di base
 

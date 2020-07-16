@@ -123,17 +123,18 @@ Per eseguire le richieste GET si può installare un API testing (per esempio Pos
 ### Statistiche
 
 L'applicazione permette di:
-- Effettuare delle statistiche su due dei campi più importanti di tipo String (language_post e location_user):
+
+* **Effettuare delle statistiche su due dei campi più importanti di tipo String (language_post e location_user)**:
 
 Esempio richiesta `http://localhost:8080/stats?field="language_post"`:
 ![Recordit GIF](http://g.recordit.co/pb6cuhnZmP.gif)
 
-- Calcolare la frequenza settimanale dei tweet esteri:
+* **Calcolare la frequenza settimanale dei tweet esteri**:
 
 Esempio richiesta `http://localhost:8080/freq?field="en"`:
 ![Recordit GIF](http://g.recordit.co/145qqOxvHR.gif)
 
-- Calcolare il numero totale di utenti esteri (per lingua):
+* **Calcolare il numero totale di utenti esteri (per lingua)**:
 
 Esempio richiesta `http://localhost:8080/stat`:
 ![Recordit GIF](http://g.recordit.co/axZCKFv8JB.gif)
@@ -148,7 +149,7 @@ E' possibile avviare la GUI scegliendo GUI_Runner nella finestra di avvio dell'a
 
 <img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/GUI_RUNNER.png">
 
-Sono state importate due librerie:
+* **Sono state importate due librerie**:
 
 - java.awt -> fornisce il modello degli eventi, componenti grafiche e la struttura di base
 

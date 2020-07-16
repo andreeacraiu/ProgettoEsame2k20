@@ -7,6 +7,7 @@
 - [Spring boot app](https://github.com/andreeacraiu/ProgettoEsame2k20#spring-boot-app)
 - [Eseguire richieste](https://github.com/andreeacraiu/ProgettoEsame2k20#Eseguire-richieste)
 - [Statistiche](https://github.com/andreeacraiu/ProgettoEsame2k20#statistiche)
+- [Protocollo HTTP](https://github.com/andreeacraiu/ProgettoEsame2k20#protocollo-http)
 - [GUI](https://github.com/andreeacraiu/ProgettoEsame2k20#gui)
 - [Diagrammi UML](https://github.com/andreeacraiu/ProgettoEsame2k20#diagrammi-UML)
 - [Software utilizzati](https://github.com/andreeacraiu/ProgettoEsame2k20#software-utilizzati)
@@ -138,6 +139,29 @@ Esempio richiesta `http://localhost:8080/freq?field="en"`:
 
 Esempio richiesta `http://localhost:8080/stat`:
 ![Recordit GIF](http://g.recordit.co/axZCKFv8JB.gif)
+
+
+### Protocollo HTTP
+
+Il protocollo HTTP funziona mediante un modello richiesta/risposta. Il client invia una richiesta al server, il quale la interpreta e restiuisce una risposta correlata da un codice.
+I codici di stato sono composti da tre numeri di cui il primo indica il tenore della risposta:
+
+- Se il numero inizia con 2 la richiesta è corretta ed è stata processata con successo;
+- Se inizia con 4 il client ha eseguito una richiesta non corretta;
+- Se inizia con 5 si è verificato un errore al server;
+
+|        Codice Riposta         |    Significato                          |
+| :---------------------------: | :---------------------------------------|
+|          `200 - OK`           | Operazione eseguita con successo. |
+|      `400 - BAD REQUEST`      | Richiesta non formulata correttamente. |
+|       `404 - NOT FOUND`       | Field immesso incorretto o chiamata inesistente. |
+| `500 - INTERNAL SERVER ERROR` | Generico errore interno al server.|
+
+- Esempio: 
+
+<img src="https://github.com/andreeacraiu/ProgettoEsame2k20/blob/master/STATUS.png">
+
+
 
 ### GUI
 

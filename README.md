@@ -125,7 +125,7 @@ Per eseguire le richieste GET si può installare un API testing (per esempio Pos
 
 L'applicazione permette di:
 
-* **Effettuare delle statistiche su due dei campi più importanti di tipo String (language_post e location_user)**:
+* **Effettuare delle statistiche su tre dei campi più importanti di tipo String (language_post, location_user e screen_name)**:
 
 Esempio richiesta `http://localhost:8080/stats?field="language_post"`:
 ![Recordit GIF](http://g.recordit.co/pb6cuhnZmP.gif)

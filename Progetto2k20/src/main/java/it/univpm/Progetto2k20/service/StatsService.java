@@ -27,6 +27,9 @@ public class StatsService {
 			case "location_user":
 				arraystring.add(t.getlocation_user());
 				break;
+			case "screen_name":
+				arraystring.add(t.getScreen_name());
+				break;
 			default:
 				return null;
 			}
@@ -38,8 +41,7 @@ public class StatsService {
 	
 	
 	/**
-	 * Crea uno StringStat 
-	 * in base al field passato dall'utente
+	 * Crea uno StringStat in base al field passato dall'utente
 	 * @param arraylist = ArrayList sul quale effettuare le statistiche
 	 * @param field = campo dell'ArrayList sul quale effettuare le statistiche
 	 * @return le statistiche effettuate
@@ -50,7 +52,7 @@ public class StatsService {
 			
 			
 			
-			if (Arrays.asList("language_post","location_user").contains(field)) {
+			if (Arrays.asList("language_post","location_user","screen_name").contains(field)) {
 				StringStat stat = new StringStat(arraylist, field);
 				return stat.getStat();
 

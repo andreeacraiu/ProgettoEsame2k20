@@ -258,6 +258,7 @@ public class Graphical_Interface {
 				String s=JOptionPane.showInputDialog("Field consentiti:\n"
 						+ "language_post -> conta e stampa le varie lingue dei tweet\n"
 						+ "location_user -> stampa tutte le location con conteggio dei tweet\n"
+						+ "screen_name -> stampa tutti gli utenti\n"
 						);
 					Stats s1 = StatsService.getStats(JSONParse.parsaJson(JSONObject.downloadTweets()), s);
 					String s2="{\n" + "\"result\":" + s1.getResult()+ "\n} \n";
@@ -361,6 +362,7 @@ public class Graphical_Interface {
 
 
 }
+
 
 
 		
